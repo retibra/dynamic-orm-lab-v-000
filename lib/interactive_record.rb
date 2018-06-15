@@ -28,8 +28,8 @@ class InteractiveRecord
   end
 
   def columns_for_insert
-  
+
   end
 
-  
+
 end
