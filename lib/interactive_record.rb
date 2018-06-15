@@ -57,7 +57,7 @@ class InteractiveRecord
     else
       sqlvalue = "'#{value}'"
     end
-    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute.keys.first} = #{value}"
+    sql = "SELECT * FROM #{self.table_name} WHERE #{attribute.keys.first} = #{sqlvalue}"
     DB[:conn].execute(sql)
   end
 end
