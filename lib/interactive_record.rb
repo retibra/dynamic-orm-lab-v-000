@@ -22,7 +22,14 @@ class InteractiveRecord
       self.send("#{k}=", v)
     end
   end
+
+  def table_name_for_insert
+    self.class.table_name
+  end
+
   def columns_for_insert
   
   end
+
+  
 end
